@@ -1,0 +1,139 @@
+/*header*/
+/* Логотип */
+
+.logotip {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--primary-text-color);
+}
+
+.logo-blue {
+  color: var(--accent-color);
+}
+
+/*логотип-фуутер*/
+.logo-footer {
+  color: var(--primary-text-color);
+}
+
+.logo-white {
+  color: var(--primary-bg-color);
+}
+
+/*шапка*/
+
+.navigation {
+  display: flex;
+  align-items: baseline;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.nav-link {
+  display: flex;
+
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 93px;
+}
+.selected-page::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  height: 4px;
+
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.nav-link .list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-link a {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-link a:hover,
+.nav-link a:focus {
+  color: var(--accent-color);
+}
+
+/*адрес і мейл*/
+
+.adress-list .list {
+  margin-right: 50px;
+}
+
+.adress-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.adress-list .lists:not(:last-child) {
+  margin-right: 50px;
+}
+.adress-list .lists {
+  display: flex;
+  align-items: center;
+  color: var(--tittle-text-color);
+  margin-left: auto;
+
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-adress {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.icon-contact {
+  display: block;
+  margin-right: 10px;
+}
+
+.lists {
+  display: flex;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  font-style: normal;
+
+  color: var(--tittle-text-color);
+}
+
+.adress-list :hover,
+.adress-list :focus {
+  color: var(--accent-color);
+  --color4: var(--accent-color);
+}
