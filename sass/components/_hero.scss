@@ -224,15 +224,15 @@
   height: 15px;
   width: 16px;
 
-  background-color: var(--additional-color);
-  border: 2px solid var(--primary-bg-color);
+  background-color: $primary-bg-color;
+  border: 2px solid $primary-text-color;
   border-radius: 2px;
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox-input:checked + svg {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
@@ -257,9 +257,9 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  background-color: var(--accent-color);
-  color: var(--additional-color);
-  --color5: var(--additional-color);
+  background-color: $accent-color;
+  color: $primary-bg-color;
+  --color5: $primary-bg-color;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -296,7 +296,7 @@
   fill: #000000;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: var(--additional-color);
+  background: $primary-bg-color;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
