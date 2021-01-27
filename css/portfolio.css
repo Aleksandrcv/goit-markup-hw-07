@@ -296,7 +296,16 @@ $bg-color #fff;*/
 /*$footer-text-color: rgba(255, 255, 255, 0.6);
 $additional-color: rgba(47, 48, 58, 0.8);
 */
-/*@import './utils/fonts';*/
+/*$familyRaleway: Raleway, sans-serif;
+/*:root {
+  --main-text-color: #212121;
+  --auxiliary-text-color: #757575;
+  --accent-color: #2196f3;
+  --section-bg-color: #f5f4fa;
+  --additional-color: #ffffff;
+  --second-additional-color: rgba(255, 255, 255, 0.6);
+}
+*/
 body {
   margin: 0;
   padding: 0;
@@ -324,7 +333,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  display: inline-block;
+  display: block;
   cursor: pointer;
 }
 
@@ -509,16 +518,15 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   background-color: transparent;
-  color: var(---primary-text-color);
+  color: #212121;
   transition-property: background-color, color, border, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .b1:hover,
 .b1:focus {
-  background: var(--accent-color);
-  color: var(--primary-bg-color);
+  background: #2196f3;
+  color: #ffffff;
   border-radius: 4px;
   border-radius: 4px;
   border: none;
@@ -559,7 +567,7 @@ button {
 .work-department a {
   display: block;
   width: 100%;
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -610,7 +618,7 @@ button {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  background-color: var(--primary-bg-color);
+  background-color: #ffffff;
   text-align: left;
 }
 
@@ -621,7 +629,7 @@ button {
   letter-spacing: 0.06em;
   text-align: left;
   text-transform: none;
-  color: var(--primary-text-color);
+  color: #212121;
   margin: 0;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -636,7 +644,7 @@ button {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  color: var(--tittle-text-color);
+  color: #757575;
 }
 
 /* Подвал */
@@ -649,12 +657,35 @@ footer {
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2f303a;
+  /* background-color: #2f303a;*/
 }
 
 .footer-soc-links {
-  --color5: var(--primary-bg-color);
+  --color5: #ffff;
   padding: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 209px;
+}
+
+.footer-soc-links a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition-property: color, background-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-soc-links a:hover,
+.footer-soc-links a:focus {
+  background-color: #2196f3;
+  --color5: #fff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
 }
 
 .join {
@@ -663,7 +694,7 @@ footer {
 }
 
 .footer-contacts h3 {
-  color: var(--primary-bg-color);
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -692,7 +723,7 @@ footer {
 
 .footer-adress-text {
   margin: 0;
-  color: var(--primary-bg-color);
+  color: #ffffff;
 }
 
 .footer-link {
@@ -712,8 +743,8 @@ footer {
   padding-left: 16px;
   width: 358px;
   height: 50px;
-  /* color: rgba(255, 255, 255);*/
   background-color: #2f303a;
+  color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -731,7 +762,6 @@ footer {
 }
 
 .form-input-footer:not(:placeholder-shown) + .form-input-footer {
-  /* color: rgba(255, 255, 255);*/
   background-color: #2f303a;
 }
 
@@ -743,9 +773,9 @@ footer {
   padding-right: 28px;
   padding-bottom: 10px;
   padding-left: 29px;
-  background-color: var(--accent-color);
-  color: var(--primary-bg-color);
-  --color5: var(--primary-bg-color);
+  background-color: #2196f3;
+  color: #ffffff;
+  --color5: $primary-bg-color;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -759,7 +789,7 @@ footer {
 
 .button-submit svg {
   margin-left: 10px;
-  background-color: var(--accent-color);
-  --color5: var(--primary-bg-color);
+  background-color: #2196f3;
+  --color5: $primary-bg-color;
 }
 /*# sourceMappingURL=portfolio.css.map */
