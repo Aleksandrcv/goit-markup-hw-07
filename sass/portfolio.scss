@@ -1,18 +1,16 @@
-@import './base/container';
-
 @import './base/modern-normalize';
+
+@import './base/container';
 
 @import './utils/variables';
 @import './utils/mixins';
+@import './utils/pleceholders';
 
+/*@import './utils/fonts';*/
 @import './components/common';
 
 @import './components/header';
 
-@import './components/hero';
-@import './components/features';
-@import './components/examples';
-@import './components/team';
-@import './components/clients';
+@import './components/portfolio';
 
 @import './components/footer';

@@ -11,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero.jpg");
+    url('../images/hero.jpg');
   max-width: 1600px;
   height: 600px;
   width: var(--max-width);
@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
 
-  color: var(--primary-bg-color);
+  color: $primary-bg-color;
 
   font-weight: 900;
   font-size: 44px;
@@ -45,8 +45,8 @@
   border-radius: 4px;
   border: none;
 
-  color: var(--primary-bg-color);
-  background: var(--accent-color);
+  color: $primary-bg-color;
+  background: $accent-color;
 
   font-weight: 700;
   font-size: 16px;
@@ -80,7 +80,7 @@
   min-width: 528px;
   padding: 40px;
 
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -104,7 +104,7 @@
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .inputs {
   margin-bottom: 20px;
@@ -123,7 +123,7 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: var(--tittle-text-color);
+  color: $tittle-text-color;
 }
 .form-input {
   padding-top: 12px;
@@ -161,11 +161,11 @@
   position: absolute;
   bottom: 13.5px;
   left: 12px;
-  fill: var(--primary-text-color);
+  fill: $primary-text-color;
 }
 .modal input:focus,
 .modal textarea:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
   outline: none;
   cursor: pointer;
 
@@ -179,7 +179,7 @@
   cursor: pointer;
 }
 .modal input:focus ~ svg {
-  fill: var(--accent-color);
+  fill: $accent-color;
   cursor: pointer;
 
   transition-duration: 250ms;
@@ -212,11 +212,11 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  color: var(--tittle-text-color);
+  color: $tittle-text-color;
 }
 .checkbox a {
   text-decoration-line: underline;
-  color: var(--accent-color);
+  color: $accent-color;
 }
 .checkbox-input + svg {
   display: inline-block;
@@ -233,7 +233,7 @@
 }
 .checkbox-input:checked + svg {
   background-color: var(--accent-color);
-  background-image: url("../images/check.svg");
+  background-image: url('../images/check.svg');
   background-size: contain;
   background-origin: border-box;
   border-color: transparent;
