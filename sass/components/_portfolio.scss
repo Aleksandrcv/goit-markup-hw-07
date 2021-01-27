@@ -24,16 +24,15 @@
   letter-spacing: 0.03em;
 
   background-color: transparent;
-  color: var(---primary-text-color);
+  color: $primary-text-color;
   transition-property: background-color, color, border, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms $time-distribution-function;
 }
 
 .b1:hover,
 .b1:focus {
-  background: var(--accent-color);
-  color: var(--primary-bg-color);
+  background: $accent-color;
+  color: $primary-bg-color;
   border-radius: 4px;
   border-radius: 4px;
   border: none;
@@ -78,7 +77,7 @@
   display: block;
   width: 100%;
 
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -134,7 +133,7 @@
   padding-bottom: 20px;
   padding-left: 24px;
 
-  background-color: var(--primary-bg-color);
+  background-color: $primary-bg-color;
 
   text-align: left;
 }
@@ -146,7 +145,7 @@
   text-align: left;
   text-transform: none;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   margin: 0;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -163,5 +162,5 @@
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  color: var(--tittle-text-color);
+  color: $tittle-text-color;
 }
